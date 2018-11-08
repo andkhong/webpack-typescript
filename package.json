@@ -1,0 +1,32 @@
+{
+  "name": "ts-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:development": "NODE_ENV=development webpack --config ./config/webpack.development.js",
+    "build:production": "NODE_ENV=production webpack -p --config ./config/webpack.production.js",
+    "serve:development": "NODE_ENV=development nodemon dist/development/index.js",
+    "serve:production": "NODE_ENV=production node dist/development/index.js",
+    "update": "npm-check -u"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.2.0",
+    "graphql": "^14.0.2",
+    "webpack": "^4.25.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-typescript": "^7.1.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "nodemon": "^1.18.6",
+    "npm-check": "^5.9.0",
+    "typescript": "^3.1.6",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.1.4",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
